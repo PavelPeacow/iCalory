@@ -11,9 +11,11 @@
 		B5CAD4A12802F9EE00636B7C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CAD4A02802F9EE00636B7C /* ContentView.swift */; };
 		B5CAD4A32802F9EF00636B7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5CAD4A22802F9EF00636B7C /* Assets.xcassets */; };
 		B5CAD4A62802F9EF00636B7C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5CAD4A52802F9EF00636B7C /* Preview Assets.xcassets */; };
-		B5CAD4B02802F9EF00636B7C /* iCaloryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CAD4AF2802F9EF00636B7C /* iCaloryTests.swift */; };
-		B5CAD4BA2802F9EF00636B7C /* iCaloryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CAD4B92802F9EF00636B7C /* iCaloryUITests.swift */; };
-		B5CAD4BC2802F9EF00636B7C /* iCaloryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CAD4BB2802F9EF00636B7C /* iCaloryUITestsLaunchTests.swift */; };
+		B5CAD4CA2802FAE900636B7C /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5CAD4C82802FAE900636B7C /* DataModel.xcdatamodeld */; };
+		B5CAD4CD2802FBD900636B7C /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CAD4CC2802FBD900636B7C /* DataController.swift */; };
+		B5CAD4CF2802FE3700636B7C /* AddFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CAD4CE2802FE3700636B7C /* AddFoodView.swift */; };
+		B5CAD4D12802FFE200636B7C /* TimeFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CAD4D02802FFE200636B7C /* TimeFormat.swift */; };
+		B5CAD4D32803069E00636B7C /* EditFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CAD4D22803069E00636B7C /* EditFoodView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +42,12 @@
 		B5CAD4A22802F9EF00636B7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5CAD4A52802F9EF00636B7C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B5CAD4AB2802F9EF00636B7C /* iCaloryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iCaloryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5CAD4AF2802F9EF00636B7C /* iCaloryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iCaloryTests.swift; sourceTree = "<group>"; };
 		B5CAD4B52802F9EF00636B7C /* iCaloryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iCaloryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5CAD4B92802F9EF00636B7C /* iCaloryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iCaloryUITests.swift; sourceTree = "<group>"; };
-		B5CAD4BB2802F9EF00636B7C /* iCaloryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iCaloryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B5CAD4C92802FAE900636B7C /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		B5CAD4CC2802FBD900636B7C /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		B5CAD4CE2802FE3700636B7C /* AddFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodView.swift; sourceTree = "<group>"; };
+		B5CAD4D02802FFE200636B7C /* TimeFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormat.swift; sourceTree = "<group>"; };
+		B5CAD4D22803069E00636B7C /* EditFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditFoodView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,12 +75,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B51837B728030BFB001D0791 /* Time */ = {
+			isa = PBXGroup;
+			children = (
+				B5CAD4D02802FFE200636B7C /* TimeFormat.swift */,
+			);
+			path = Time;
+			sourceTree = "<group>";
+		};
+		B51837B828030C0E001D0791 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B5CAD4CE2802FE3700636B7C /* AddFoodView.swift */,
+				B5CAD4A02802F9EE00636B7C /* ContentView.swift */,
+				B5CAD4D22803069E00636B7C /* EditFoodView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		B5CAD4922802F9EE00636B7C = {
 			isa = PBXGroup;
 			children = (
 				B5CAD49D2802F9EE00636B7C /* iCalory */,
-				B5CAD4AE2802F9EF00636B7C /* iCaloryTests */,
-				B5CAD4B82802F9EF00636B7C /* iCaloryUITests */,
 				B5CAD49C2802F9EE00636B7C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -95,7 +115,9 @@
 			isa = PBXGroup;
 			children = (
 				B5CAD49E2802F9EE00636B7C /* iCaloryApp.swift */,
-				B5CAD4A02802F9EE00636B7C /* ContentView.swift */,
+				B51837B828030C0E001D0791 /* View */,
+				B51837B728030BFB001D0791 /* Time */,
+				B5CAD4CB2802FAF000636B7C /* Data */,
 				B5CAD4A22802F9EF00636B7C /* Assets.xcassets */,
 				B5CAD4A42802F9EF00636B7C /* Preview Content */,
 			);
@@ -110,21 +132,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		B5CAD4AE2802F9EF00636B7C /* iCaloryTests */ = {
+		B5CAD4CB2802FAF000636B7C /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				B5CAD4AF2802F9EF00636B7C /* iCaloryTests.swift */,
+				B5CAD4C82802FAE900636B7C /* DataModel.xcdatamodeld */,
+				B5CAD4CC2802FBD900636B7C /* DataController.swift */,
 			);
-			path = iCaloryTests;
-			sourceTree = "<group>";
-		};
-		B5CAD4B82802F9EF00636B7C /* iCaloryUITests */ = {
-			isa = PBXGroup;
-			children = (
-				B5CAD4B92802F9EF00636B7C /* iCaloryUITests.swift */,
-				B5CAD4BB2802F9EF00636B7C /* iCaloryUITestsLaunchTests.swift */,
-			);
-			path = iCaloryUITests;
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +271,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5CAD4CF2802FE3700636B7C /* AddFoodView.swift in Sources */,
+				B5CAD4CA2802FAE900636B7C /* DataModel.xcdatamodeld in Sources */,
+				B5CAD4CD2802FBD900636B7C /* DataController.swift in Sources */,
+				B5CAD4D12802FFE200636B7C /* TimeFormat.swift in Sources */,
 				B5CAD4A12802F9EE00636B7C /* ContentView.swift in Sources */,
+				B5CAD4D32803069E00636B7C /* EditFoodView.swift in Sources */,
 				B5CAD49F2802F9EE00636B7C /* iCaloryApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,7 +285,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5CAD4B02802F9EF00636B7C /* iCaloryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +292,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5CAD4BC2802F9EF00636B7C /* iCaloryUITestsLaunchTests.swift in Sources */,
-				B5CAD4BA2802F9EF00636B7C /* iCaloryUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +599,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B5CAD4C82802FAE900636B7C /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B5CAD4C92802FAE900636B7C /* DataModel.xcdatamodel */,
+			);
+			currentVersion = B5CAD4C92802FAE900636B7C /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B5CAD4932802F9EE00636B7C /* Project object */;
 }
